@@ -333,7 +333,7 @@ collections:
     files:
       - label: "Blog Hero Section"
         name: "hero"
-        file: "content/blog/hero.md"
+        file: "content/blogs/hero.md"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Subheader Content", name: "subheader_content", widget: "string" }
