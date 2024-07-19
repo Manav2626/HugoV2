@@ -213,7 +213,7 @@ collections:
               - { label: "Background Image", name: "background_image", widget: "image" }
       - label: "Appointment Section"
         name: "appointment_section"
-        file: "content/appointment/appointment.md"
+        file: "content/services/appointment.md"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Date", name: "date", widget: "datetime" }
@@ -231,7 +231,7 @@ collections:
               - { label: "Description", name: "description", widget: "text" }
       - label: "Pricing Section"
         name: "pricing_section"
-        file: "content/pricing/pricing.md"
+        file: "content/services/pricing.md"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Date", name: "date", widget: "datetime" }
@@ -256,7 +256,7 @@ collections:
                   - { label: "Badge Icon", name: "badge_icon", widget: "image", required: false }
       - label: "Testimonials"
         name: "testimonials_section"
-        file: "content/testimonials/testimonials.md"
+        file: "content/services/testimonials.md"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - label: "Testimonials"
@@ -275,7 +275,7 @@ collections:
               - { label: "Client Logo", name: "client_logo", widget: "image" }
       - label: "Counter Section"
         name: "counter_section"
-        file: "content/counter/counter.md"
+        file: "content/services/counter.md"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - label: "Counters"
