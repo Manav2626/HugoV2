@@ -187,7 +187,7 @@ collections:
     files:
       - label: "Hero Section"
         name: "hero"
-        file: "content/services/services_hero.md"
+        file: "content/services/hero.md"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Hero Title", name: "hero_title", widget: "string" }
