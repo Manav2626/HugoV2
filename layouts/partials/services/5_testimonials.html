@@ -1,0 +1,30 @@
+<!--==================== Testimonial Style 2 ====================-->
+<div class="light">
+    <div class="container container-custom">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="testi-slider-style2">
+                    {{ range .Params.testimonials }}
+                    <div class="testimonial-style2">
+                        <img src="{{ .image | relURL }}" alt="#">
+                        <ul>
+                            {{ range seq 1 .rating }}
+                            <li><i class="fas fa-star"></i></li>
+                            {{ end }}
+                        </ul>
+                        <p>{{ .text }}</p>
+                        <span>{{ .name }} ({{ .position }})</span>
+                    </div>
+                    {{ end }}
+                </div>
+                <hr>
+                <div class="testi-slider-style2-nav">
+                    {{ range .Params.client_logos }}
+                    <div><img src="{{ . | relURL }}" class="img-fluid" alt="#"></div>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--//End Testimonial Style 2 -->

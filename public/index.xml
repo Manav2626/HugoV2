@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My New Hugo Site</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on My New Hugo Site</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 18 Jul 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About Section</title>
+      <link>http://localhost:1313/home/aboutsection/</link>
+      <pubDate>Thu, 18 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/home/aboutsection/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Appointment Section</title>
+      <link>http://localhost:1313/services/appointment/</link>
+      <pubDate>Thu, 18 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/services/appointment/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Doctors Hero Section</title>
+      <link>http://localhost:1313/doctors/hero/</link>
+      <pubDate>Thu, 18 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/doctors/hero/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Emergency</title>
+      <link>http://localhost:1313/doctors/emergency/</link>
+      <pubDate>Thu, 18 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/doctors/emergency/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Latest News &amp; Events</title>
+      <link>http://localhost:1313/home/blog/</link>
+      <pubDate>Thu, 18 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/home/blog/</guid>
+      <description> </description>
+    </item>
+    <item>
+      <title>News Section</title>
+      <link>http://localhost:1313/home/news/</link>
+      <pubDate>Thu, 18 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/home/news/</guid>
+      <description> </description>
+    </item>
+    <item>
+      <title>Our Doctors Section</title>
+      <link>http://localhost:1313/doctors/ourdoctors/</link>
+      <pubDate>Thu, 18 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/doctors/ourdoctors/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Our Services</title>
+      <link>http://localhost:1313/home/ourservices/</link>
+      <pubDate>Thu, 18 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/home/ourservices/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Our Team Section</title>
+      <link>http://localhost:1313/home/ourteam/</link>
+      <pubDate>Thu, 18 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/home/ourteam/</guid>
+      <description> </description>
+    </item>
+    <item>
+      <title>Pricing Section</title>
+      <link>http://localhost:1313/services/pricing/</link>
+      <pubDate>Thu, 18 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/services/pricing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Services Hero Section</title>
+      <link>http://localhost:1313/services/hero/</link>
+      <pubDate>Thu, 18 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/services/hero/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Services Section</title>
+      <link>http://localhost:1313/services/services/</link>
+      <pubDate>Thu, 18 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/services/services/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>We Believe in a Healthier You</title>
+      <link>http://localhost:1313/home/getaconsultant/</link>
+      <pubDate>Thu, 18 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/home/getaconsultant/</guid>
+      <description> </description>
+    </item>
+    <item>
+      <title>About Us</title>
+      <link>http://localhost:1313/about/hero/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/hero/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Blog List</title>
+      <link>http://localhost:1313/blogs/hero/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blogs/hero/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Counter</title>
+      <link>http://localhost:1313/services/counter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/services/counter/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hero Section</title>
+      <link>http://localhost:1313/home/hero/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/home/hero/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Our Mission</title>
+      <link>http://localhost:1313/about/ourmission/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/ourmission/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Testimonials</title>
+      <link>http://localhost:1313/services/testimonials/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/services/testimonials/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>What Our Clients Say</title>
+      <link>http://localhost:1313/home/testimonial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/home/testimonial/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Why Choose Mededin Care?</title>
+      <link>http://localhost:1313/home/whychooseus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/home/whychooseus/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

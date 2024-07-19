@@ -1,0 +1,50 @@
+<!--==================== Blog ====================-->
+<section class="space">
+    <div class="container container-custom">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="sub-title_center">
+                    <span><i>{{ .Params.section_title }}</i></span>
+                    <h2>{{ .Params.title }}</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="blog-wrap">
+                    {{ range .Params.posts }}
+                    <div class="blog-row-block">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="blog-img">
+                                    <img src="{{ .image | relURL }}" class="img-fluid" alt="#" />
+                                </div>
+                            </div>
+                            <div class="col-md-6 d-flex align-items-center">
+                                <div class="blog-content">
+                                    <span>{{ .date }} | By {{ .author }}</span>
+                                    <h3>{{ .title }}</h3>
+                                </div>
+                            </div>
+                            <div class="col-md-3 d-flex align-items-center">
+                                <div class="blog-read-more">
+                                    <p><i class="far fa-eye"></i>{{ .views }} <span>|</span> <i class="far fa-comment"></i>{{ .comments }}</p>
+                                    <a href="{{ .link }}" class="btn btn-primary">READ MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="text-center mt-5">
+                    <a href="#" class="btn btn-outline-primary">View All Blogs</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--//End Blog -->

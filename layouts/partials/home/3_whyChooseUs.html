@@ -1,0 +1,75 @@
+<!--==================== Why Choose ====================-->
+<section class="space why-choose-block">
+    <div class="container container-custom">
+        <div class="row">
+            <div class="col-md-12 col-lg-5">
+                <h2>
+                    {{ .Params.title }}
+                </h2>
+                <hr>
+                <div class="row">
+                    {{ range .Params.advanced_care }}
+                    <div class="col-md-6">
+                        <div class="why-choose_list why-choose_list-br">
+                            <i class="fas fa-check"></i>
+                            <div class="why-choose_list-content">
+                                <h5>{{ .title }}</h5>
+                                <span>{{ .description }}</span>
+                            </div>
+                        </div>
+                    </div>
+                    {{ end }}
+                </div>
+                <hr>
+                <div class="row">
+                    {{ range .Params.medical_surgical }}
+                    <div class="col-md-6">
+                        <div class="why-choose_list why-choose_list-br">
+                            <i class="fas fa-check"></i>
+                            <div class="why-choose_list-content">
+                                <h5>{{ .title }}</h5>
+                                <span>{{ .description }}</span>
+                            </div>
+                        </div>
+                    </div>
+                    {{ end }}
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-md-12">
+                        <a href="{{ .Params.make_appointment_link }}" class="btn btn-dark" tabindex="0">MAKE APPOINTMENT</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-6 offset-lg-1">
+                <div class="why-choose_right">
+                    <h2>
+                        {{ .Params.emergency_contact.title }}
+                    </h2>
+                    <p>
+                        {{ .Params.emergency_contact.description }}
+                    </p>
+                    <div class="why-choose_list">
+                        <div class="choose-icon">
+                            <i class="fas fa-phone-volume"></i>
+                        </div>
+                        <div class="why-choose_list-content">
+                            <span>{{ .Params.phone_number_label }}</span>
+                            <h3>{{ .Params.phone_number }}</h3>
+                        </div>
+                    </div>
+                    <div class="why-choose_list">
+                        <div class="choose-icon">
+                            <i class="fas fa-envelope-open-text"></i>
+                        </div>
+                        <div class="why-choose_list-content">
+                            <span>{{ .Params.email_label }}</span>
+                            <h3>{{ .Params.email }}</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--//End Why Choose -->

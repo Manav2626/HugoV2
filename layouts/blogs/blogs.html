@@ -1,0 +1,11 @@
+
+{{ define "main" }}
+
+    {{ $hero := .Site.GetPage "blogs/hero" }}
+    {{ partial "blogs/1_hero" $hero }}
+
+    {{ $blog := .Site.GetPage "home/blog" }}
+    {{ partial "home/8_blog" $blog }}
+    
+   
+{{ end }}

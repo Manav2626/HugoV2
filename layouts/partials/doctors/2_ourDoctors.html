@@ -1,0 +1,32 @@
+<!--==================== Our Doctors ====================-->
+<section class="space">
+    <div class="container container-custom">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="sub-title_center">
+                    <span>{{ .Params.subtitle }}</span>
+                    <h2>{{ .Params.section_title }}</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            {{ range .Params.doctors }}
+            <div class="col-md-3">
+                <div class="docrtors-box1">
+                    <img src="{{ .image | relURL }}" class="img-fluid dotor-box1-img" alt="#">
+                    <h4>{{ .name }}</h4>
+                    <p>{{ .specialty }}</p>
+                    <a href="#" class="btn btn-success">VIEW MORE</a>
+                    <ul>
+                        {{ range .social }}
+                        <li><a href="{{ .link }}"><i class="{{ .icon }}"></i></a></li>
+                        {{ end }}
+                    </ul>
+                    <div class="bg-shade"><img src="{{ "images/bg-shade.png" | relURL }}" class="img-fluid" alt="#"></div>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+<!--//End Our Doctors -->

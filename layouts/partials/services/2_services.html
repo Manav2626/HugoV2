@@ -1,0 +1,29 @@
+<!--==================== Services ====================-->
+<section class="space light">
+    <div class="container container-custom">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="sub-title_center">
+                    <span>{{ .Params.section_title }}</span>
+                    <h2>{{ .Params.section_heading }}</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            {{ range .Params.services }}
+            <div class="col-md-4">
+                <div class="service-block {{ .color }}">
+                    <img src="{{ .icon | relURL }}" alt="#">
+                    <h3>{{ .title }}</h3>
+                    <p>{{ .description }}</p>
+                    <a href="{{ .read_more_link }}" class="btn btn-dark">READ MORE</a>
+                    <div class="service-bg-icon">
+                        <img src="{{ .background_image | relURL }}" class="img-fluid" alt="#">
+                    </div>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+<!--//End Services -->

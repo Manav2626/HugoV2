@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Homes on My New Hugo Site</title>
+    <link>http://localhost:1313/home/</link>
+    <description>Recent content in Homes on My New Hugo Site</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 18 Jul 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/home/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About Section</title>
+      <link>http://localhost:1313/home/aboutsection/</link>
+      <pubDate>Thu, 18 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/home/aboutsection/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Latest News &amp; Events</title>
+      <link>http://localhost:1313/home/blog/</link>
+      <pubDate>Thu, 18 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/home/blog/</guid>
+      <description> </description>
+    </item>
+    <item>
+      <title>News Section</title>
+      <link>http://localhost:1313/home/news/</link>
+      <pubDate>Thu, 18 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/home/news/</guid>
+      <description> </description>
+    </item>
+    <item>
+      <title>Our Services</title>
+      <link>http://localhost:1313/home/ourservices/</link>
+      <pubDate>Thu, 18 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/home/ourservices/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Our Team Section</title>
+      <link>http://localhost:1313/home/ourteam/</link>
+      <pubDate>Thu, 18 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/home/ourteam/</guid>
+      <description> </description>
+    </item>
+    <item>
+      <title>We Believe in a Healthier You</title>
+      <link>http://localhost:1313/home/getaconsultant/</link>
+      <pubDate>Thu, 18 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/home/getaconsultant/</guid>
+      <description> </description>
+    </item>
+    <item>
+      <title>Hero Section</title>
+      <link>http://localhost:1313/home/hero/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/home/hero/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>What Our Clients Say</title>
+      <link>http://localhost:1313/home/testimonial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/home/testimonial/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Why Choose Mededin Care?</title>
+      <link>http://localhost:1313/home/whychooseus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/home/whychooseus/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

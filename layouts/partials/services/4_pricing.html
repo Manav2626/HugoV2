@@ -1,0 +1,51 @@
+<!--==================== Pricing ====================-->
+<section class="space">
+    <div class="container container-custom">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="heading-style1">
+                    <span>{{ .Params.section_title }}</span>
+                    <h2>Pricing & Plans</h2>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="pricing-tab">
+                    <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                        {{ range .Params.pricing_plans }}
+                        <li class="nav-item">
+                            <a class="nav-link{{ if eq .tab_id "pills-home" }} active{{ end }}" id="{{ .tab_id }}-tab" data-toggle="pill" href="#{{ .tab_id }}" role="tab" aria-controls="{{ .tab_id }}" aria-selected="true">{{ .tab_name }}</a>
+                        </li>
+                        {{ end }}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="tab-content" id="pills-tabContent">
+                    {{ range .Params.pricing_plans }}
+                    <div class="tab-pane fade{{ if eq .tab_id "pills-home" }} show active{{ end }}" id="{{ .tab_id }}" role="tabpanel" aria-labelledby="{{ .tab_id }}-tab">
+                        <ul class="pricing">
+                            {{ range .plans }}
+                            <li{{ if eq .button_class "btn btn-success" }} class="pricing-middle"{{ end }}>
+                                <img src="{{ .icon | relURL }}" class="img-fluid" alt="#">
+                                <h2><span>{{ .price }}</span></h2>
+                                <h3>{{ .title }}</h3>
+                                <p>{{ .description }}</p>
+                                <a href="#" class="{{ .button_class }}">{{ .button_text }}</a>
+                                {{ with .badge_icon }}
+                                <div class="pricing-badge">
+                                    <img src="{{ . | relURL }}" alt="#">
+                                </div>
+                                {{ end }}
+                            </li>
+                            {{ end }}
+                        </ul>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--//End Pricing -->

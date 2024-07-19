@@ -1,0 +1,80 @@
+<!--==================== About Section ====================-->
+<section class="about-section">
+    <div class="container container-custom">
+        <div class="row">
+            <!-- Service Icon 01 -->
+            <div class="col-md-4">
+                <div class="service-thumbnail d-flex flex-fill">
+                    <img src="{{ .Params.service_thumbnail_01 | relURL }}" class="img-fluid" alt="#" />
+                    <div class="service-thumbnail_text">
+                        <h4>{{ .Params.service_title_01 }}</h4>
+                        <p>{{ .Params.service_description_01 }}</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Service Icon 02 -->
+            <div class="col-md-4">
+                <div class="service-thumbnail d-flex flex-fill">
+                    <img src="{{ .Params.service_thumbnail_02 | relURL }}" class="img-fluid" alt="#" />
+                    <div class="service-thumbnail_text">
+                        <h4>{{ .Params.service_title_02 }}</h4>
+                        <p>{{ .Params.service_description_02 }}</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Service Icon 03 -->
+            <div class="col-md-4">
+                <div class="service-thumbnail border-0 d-flex flex-fill">
+                    <img src="{{ .Params.service_thumbnail_03 | relURL }}" class="img-fluid" alt="#" />
+                    <div class="service-thumbnail_text">
+                        <h4>{{ .Params.service_title_03 }}</h4>
+                        <p>{{ .Params.service_description_03 }}</p>
+                    </div>
+                </div>
+            </div>
+            <!--//End Service Icons -->
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <!-- About -->
+                <div class="about-video_block">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-6">
+                            <a href="{{ .Params.video_url }}" class="video-play-img popup-youtube">
+                                <img src="{{ .Params.about_image | relURL }}" class="img-fluid w-100" alt="#" />
+                                <div class="video-play-btn">
+                                    <div class="video-play-icon">
+                                        <i class="fas fa-play"></i>
+                                    </div>
+                                    <span>PLAY VIDEO</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-12 col-lg-6">
+                            <div class="video-play-text">
+                                <h2>{{ .Params.about_title }}</h2>
+                                <p>{{ .Params.about_description }}</p>
+                                <p>
+                                    {{ .Params.about_additional_text }}
+                                    <a href="{{ .Params.readmore_link }}">Read more</a>
+                                </p>
+                                <div class="row">
+                                    {{ range .Params.facilities }}
+                                    <div class="col-md-6">
+                                        <div class="facilities {{ .color }}">
+                                            <h3>{{ .count }}</h3>
+                                            <span>{{ .label }}</span>
+                                        </div>
+                                    </div>
+                                    {{ end }}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--//End About -->
+            </div>
+        </div>
+    </div>
+</section>
+<!--//End About Section -->

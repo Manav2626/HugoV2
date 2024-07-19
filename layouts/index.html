@@ -1,0 +1,30 @@
+{{ define "main" }}
+    <!-- Add your sections here -->
+    {{ $hero := .Site.GetPage "home/hero" }}
+    {{ partial "home/hero" $hero }}
+    
+    {{ $about := .Site.GetPage "home/aboutSection" }}
+    {{ partial "home/1_aboutSection" $about }}
+    
+    {{ $ourservices := .Site.GetPage "home/ourServices" }}
+    {{ partial "home/2_ourService" $ourservices }}
+    
+    
+    {{ $whyChooseUs := .Site.GetPage "home/whyChooseUs" }}
+    {{ partial "home/3_whyChooseUs" $whyChooseUs }}
+    
+    {{ $news := .Site.GetPage "home/news" }}
+    {{ partial "home/4_news" $news }}
+
+    {{ $ourTeam := .Site.GetPage "home/ourTeam" }}
+    {{ partial "home/5_ourTeam" $ourTeam }}
+
+    {{ $getAConsultant := .Site.GetPage "home/getAConsultant" }}
+    {{ partial "home/6_getAConsultant" $getAConsultant }}
+
+    {{ $testimonial := .Site.GetPage "home/testimonial" }}
+    {{ partial "home/7_testimonial" $testimonial }}
+
+    {{ $blog := .Site.GetPage "home/blog" }}
+    {{ partial "home/8_blog" $blog }}
+{{ end }}

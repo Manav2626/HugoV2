@@ -1,0 +1,24 @@
+<!--==================== Emergency ====================-->
+<section class="emergency" style="padding: 90px 0; background: url({{ .Params.background_image | relURL }}); background-size: cover;">
+
+    <div class="container container-custom">
+        <div class="row">
+            <div class="col-md-5 offset-md-7">
+                <div class="emergency-box">
+                    <h2>{{ .Params.section_title }}</h2>
+                    <p>{{ .Params.description }}</p>
+                    {{ range .Params.contact_blocks }}
+                    <div class="emergency-block">
+                        <i class="{{ .icon }}"></i>
+                        <div class="emergency-text">
+                            <p>{{ .title }}</p>
+                            <h4>{{ .number }}</h4>
+                        </div>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--//End Emergency -->

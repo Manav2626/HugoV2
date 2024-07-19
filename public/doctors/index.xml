@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My New Hugo Site</title>
+    <link>http://localhost:1313/doctors/</link>
+    <description>Recent content on My New Hugo Site</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 18 Jul 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/doctors/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Doctors Hero Section</title>
+      <link>http://localhost:1313/doctors/hero/</link>
+      <pubDate>Thu, 18 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/doctors/hero/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Emergency</title>
+      <link>http://localhost:1313/doctors/emergency/</link>
+      <pubDate>Thu, 18 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/doctors/emergency/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Our Doctors Section</title>
+      <link>http://localhost:1313/doctors/ourdoctors/</link>
+      <pubDate>Thu, 18 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/doctors/ourdoctors/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

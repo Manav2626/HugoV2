@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My New Hugo Site</title>
+    <link>http://localhost:1313/services/</link>
+    <description>Recent content on My New Hugo Site</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 18 Jul 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/services/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Appointment Section</title>
+      <link>http://localhost:1313/services/appointment/</link>
+      <pubDate>Thu, 18 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/services/appointment/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pricing Section</title>
+      <link>http://localhost:1313/services/pricing/</link>
+      <pubDate>Thu, 18 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/services/pricing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Services Hero Section</title>
+      <link>http://localhost:1313/services/hero/</link>
+      <pubDate>Thu, 18 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/services/hero/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Services Section</title>
+      <link>http://localhost:1313/services/services/</link>
+      <pubDate>Thu, 18 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/services/services/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Counter</title>
+      <link>http://localhost:1313/services/counter/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/services/counter/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Testimonials</title>
+      <link>http://localhost:1313/services/testimonials/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/services/testimonials/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
