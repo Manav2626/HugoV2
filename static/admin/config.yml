@@ -11,7 +11,7 @@ public_folder: "/images/uploads" # Folder for user uploads in the published site
 collections:
   - name: "home"
     label: "Home"
-    folders:
+    folder:
       - label: "Hero Section"
         name: "hero"
         folder: "content/home/home_hero.md"
@@ -184,7 +184,7 @@ collections:
               - { label: "Link", name: "link", widget: "string" }
   - name: "services"
     label: "Services"
-    folders:
+    folder:
       - label: "Hero Section"
         name: "hero"
         folder: "content/services/services_hero.md"
