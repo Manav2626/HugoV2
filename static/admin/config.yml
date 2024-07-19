@@ -185,7 +185,7 @@ collections:
   - name: "services"
     label: "Services"
     files:
-      - label: "Hero Section"
+      - label: "Services Hero Section"
         name: "hero"
         file: "content/services/hero.md"
         fields:
@@ -254,7 +254,7 @@ collections:
                   - { label: "Button Text", name: "button_text", widget: "string" }
                   - { label: "Button Class", name: "button_class", widget: "string" }
                   - { label: "Badge Icon", name: "badge_icon", widget: "image", required: false }
-      - label: "Testimonials"
+      - label: "Services Testimonials"
         name: "testimonials_section"
         file: "content/services/testimonials.md"
         fields:
@@ -300,6 +300,7 @@ collections:
           - { label: "Section Title", name: "section_title", widget: "string" }
           - { label: "Subtitle", name: "subtitle", widget: "string" }
           - { label: "Breadcrumb", name: "breadcrumb", widget: "string" }
+
       - label: "Our Doctors Section"
         name: "our_doctors"
         file: "content/doctors/ourDoctors.md"
