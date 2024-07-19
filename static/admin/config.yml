@@ -264,17 +264,17 @@ collections:
             fields:
               - { label: "Client Logo", name: "client_logo", widget: "image" }
       - label: "Counter Section"
-          name: "counter_section"
-          file: "content/counter/counter.md"
-          fields:
-            - { label: "Title", name: "title", widget: "string" }
-            - label: "Counters"
-              name: "counters"
-              widget: "list"
-              fields:
-                - { label: "Image", name: "image", widget: "image" }
-                - { label: "Count", name: "count", widget: "string" }
-                - { label: "Description", name: "description", widget: "string" }
-            - { label: "Button Text", name: "button_text", widget: "string" }
-            - { label: "Button Link", name: "button_link", widget: "string" }
+        name: "counter_section"
+        file: "content/counter/counter.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - label: "Counters"
+            name: "counters"
+            widget: "list"
+            fields:
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Count", name: "count", widget: "string" }
+              - { label: "Description", name: "description", widget: "string" }
+          - { label: "Button Text", name: "button_text", widget: "string" }
+          - { label: "Button Link", name: "button_link", widget: "string" }
 
