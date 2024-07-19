@@ -1,10 +1,10 @@
 collections:
   - name: "home"
     label: "Home"
-    files:
+    folders:
       - label: "Hero Section"
         name: "hero"
-        file: "content/home/home_hero.md"
+        folder: "content/home/home_hero.md"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Span Text", name: "span_text", widget: "string" }
@@ -22,7 +22,7 @@ collections:
               - { label: "Icon", name: "icon", widget: "string" }
       - label: "About Section"
         name: "about"
-        file: "content/home/aboutSection.md"
+        folder: "content/home/aboutSection.md"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Date", name: "date", widget: "datetime" }
@@ -50,7 +50,7 @@ collections:
               - { label: "Color", name: "color", widget: "select", options: ["blue", "green", "yellow", "gray"] }
       - label: "Our Services"
         name: "services"
-        file: "content/home/ourServices.md"
+        folder: "content/home/ourServices.md"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Date", name: "date", widget: "datetime" }
@@ -67,7 +67,7 @@ collections:
           - { label: "Contact Link", name: "contact_link", widget: "string" }
       - label: "Why Choose Us"
         name: "why_choose_us"
-        file: "content/home/whyChooseUs.md"
+        folder: "content/home/whyChooseUs.md"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - label: "Advanced Care"
@@ -95,7 +95,7 @@ collections:
           - { label: "Email", name: "email", widget: "string" }
       - label: "News Section"
         name: "news_section"
-        file: "content/home/newsSection.md"
+        folder: "content/home/newsSection.md"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Date", name: "date", widget: "datetime" }
@@ -107,7 +107,7 @@ collections:
           - { label: "Contact Link", name: "contact_link", widget: "string" }
       - label: "Our Team Section"
         name: "our_team_section"
-        file: "content/home/ourTeam.md"
+        folder: "content/home/ourTeam.md"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Date", name: "date", widget: "datetime" }
@@ -129,7 +129,7 @@ collections:
                   - { label: "Link", name: "link", widget: "string" }
       - label: "Get a Consultant"
         name: "get_a_consultant"
-        file: "content/home/getAConsultant.md"
+        folder: "content/home/getAConsultant.md"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Date", name: "date", widget: "datetime" }
@@ -141,7 +141,7 @@ collections:
           - { label: "Video Link", name: "video_link", widget: "string" }
       - label: "Testimonials"
         name: "testimonials"
-        file: "content/home/testimonial.md"
+        folder: "content/home/testimonial.md"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Section Title", name: "section_title", widget: "string" }
@@ -156,7 +156,7 @@ collections:
               - { label: "Rating", name: "rating", widget: "list", field: { widget: "number" } }
       - label: "Blog"
         name: "blog"
-        file: "content/home/blog.md"
+        folder: "content/home/blog.md"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Date", name: "date", widget: "datetime" }
@@ -174,10 +174,10 @@ collections:
               - { label: "Link", name: "link", widget: "string" }
   - name: "services"
     label: "Services"
-    files:
+    folders:
       - label: "Hero Section"
         name: "hero"
-        file: "content/services/services_hero.md"
+        folder: "content/services/services_hero.md"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Hero Title", name: "hero_title", widget: "string" }
@@ -185,7 +185,7 @@ collections:
           - { label: "Hero Subheading", name: "hero_subheading", widget: "string" }
       - label: "Services Section"
         name: "services_section"
-        file: "content/services/services.md"
+        folder: "content/services/services.md"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Date", name: "date", widget: "datetime" }
@@ -203,7 +203,7 @@ collections:
               - { label: "Background Image", name: "background_image", widget: "image" }
       - label: "Appointment Section"
         name: "appointment_section"
-        file: "content/appointment/appointment.md"
+        folder: "content/appointment/appointment.md"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Date", name: "date", widget: "datetime" }
@@ -221,7 +221,7 @@ collections:
               - { label: "Description", name: "description", widget: "text" }
       - label: "Pricing Section"
         name: "pricing_section"
-        file: "content/pricing/pricing.md"
+        folder: "content/pricing/pricing.md"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Date", name: "date", widget: "datetime" }
@@ -246,7 +246,7 @@ collections:
                   - { label: "Badge Icon", name: "badge_icon", widget: "image", required: false }
       - label: "Testimonials"
         name: "testimonials_section"
-        file: "content/testimonials/testimonials.md"
+        folder: "content/testimonials/testimonials.md"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - label: "Testimonials"
@@ -265,7 +265,7 @@ collections:
               - { label: "Client Logo", name: "client_logo", widget: "image" }
       - label: "Counter Section"
         name: "counter_section"
-        file: "content/counter/counter.md"
+        folder: "content/counter/counter.md"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - label: "Counters"
