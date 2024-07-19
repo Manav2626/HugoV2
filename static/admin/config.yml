@@ -308,13 +308,16 @@ collections:
           - { label: "Date", name: "date", widget: "datetime" }
           - { label: "Section Title", name: "section_title", widget: "string" }
           - { label: "Subtitle", name: "subtitle", widget: "string" }
-          - { label: "Doctors", name: "doctors", widget: "list" }
-          - { label: "Image", name: "image", widget: "image" }
-          - { label: "Name", name: "name", widget: "string" }
-          - { label: "Specialty", name: "specialty", widget: "string" }
-          - { label: "Social Links", name: "social", widget: "list" }
-          - { label: "Icon", name: "icon", widget: "string" }
-          - { label: "Link", name: "link", widget: "string" }
+          - { label: "Doctors", name: "doctors", widget: "list", fields:
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Specialty", name: "specialty", widget: "string" }
+              - { label: "Social Links", name: "social", widget: "list", fields:
+                  - { label: "Icon", name: "icon", widget: "string" }
+                  - { label: "Link", name: "link", widget: "string" }
+                }
+            }
+
       - label: "Emergency Section"
         name: "emergency"
         file: "content/doctors/emergency.md"
