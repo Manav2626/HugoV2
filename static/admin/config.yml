@@ -287,7 +287,6 @@ collections:
               - { label: "Description", name: "description", widget: "string" }
           - { label: "Button Text", name: "button_text", widget: "string" }
           - { label: "Button Link", name: "button_link", widget: "string" }
-
   - name: "doctors"
     label: "Doctors"
     files:
@@ -327,8 +326,8 @@ collections:
           - { label: "Description", name: "description", widget: "text" }
           - { label: "Contact Blocks", name: "contact_blocks", widget: "list" }
           - { label: "Icon", name: "icon", widget: "string" }
-          - { label: "Title", name: "title", widget: "string" }
           - { label: "Number", name: "number", widget: "string" }
+
   - name: "blog"
     label: "Blog"
     files:
