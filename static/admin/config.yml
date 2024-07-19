@@ -14,7 +14,7 @@ collections:
     files:
       - label: "Hero Section"
         name: "hero"
-        file: "content/home/home_hero.md"
+        file: "content/home/hero.md"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Span Text", name: "span_text", widget: "string" }
