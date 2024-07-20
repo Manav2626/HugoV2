@@ -1,10 +1,20 @@
+backend:
+  name: git-gateway
+  branch: main # Branch to update (replace with your branch if different)
+
+publish_mode: editorial_workflow
+
+media_folder: "static/images/uploads" # folder where user uploads are stored
+public_folder: "/images/uploads" # folder for user uploads in the published site
+
+
 collections:
   - name: "home"
     label: "Home"
     files:
       - label: "Hero Section"
         name: "hero"
-        file: "content/home/home_hero.md"
+        file: "content/home/hero.md"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Span Text", name: "span_text", widget: "string" }
@@ -95,7 +105,7 @@ collections:
           - { label: "Email", name: "email", widget: "string" }
       - label: "News Section"
         name: "news_section"
-        file: "content/home/newsSection.md"
+        file: "content/home/news.md"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Date", name: "date", widget: "datetime" }
@@ -153,7 +163,7 @@ collections:
               - { label: "Initial", name: "initial", widget: "string" }
               - { label: "Quote", name: "quote", widget: "text" }
               - { label: "Image", name: "image", widget: "image" }
-              - { label: "Rating", name: "rating", widget: "list", field: { widget: "number" } }
+              - { label: "Rating", name: "rating", widget: "list", fields: [{ label: "Number", name: "number", widget: "number" }] }
       - label: "Blog"
         name: "blog"
         file: "content/home/blog.md"
@@ -173,108 +183,194 @@ collections:
               - { label: "Comments", name: "comments", widget: "number" }
               - { label: "Link", name: "link", widget: "string" }
   - name: "services"
-      label: "Services"
-      files:
-        - label: "Hero Section"
-          name: "hero"
-          file: "content/services/services_hero.md"
-          fields:
-            - { label: "Title", name: "title", widget: "string" }
-            - { label: "Hero Title", name: "hero_title", widget: "string" }
-            - { label: "Hero Heading", name: "hero_heading", widget: "string" }
-            - { label: "Hero Subheading", name: "hero_subheading", widget: "string" }
-        - label: "Services Section"
-          name: "services_section"
-          file: "content/services/services.md"
-          fields:
-            - { label: "Title", name: "title", widget: "string" }
-            - { label: "Date", name: "date", widget: "datetime" }
-            - { label: "Section Title", name: "section_title", widget: "string" }
-            - { label: "Section Heading", name: "section_heading", widget: "string" }
-            - label: "Services"
-              name: "services"
-              widget: "list"
-              fields:
-                - { label: "Title", name: "title", widget: "string" }
-                - { label: "Description", name: "description", widget: "text" }
-                - { label: "Read More Link", name: "read_more_link", widget: "string" }
-                - { label: "Color", name: "color", widget: "select", options: ["blue", "green", "yellow", "gray"] }
-                - { label: "Icon", name: "icon", widget: "image" }
-                - { label: "Background Image", name: "background_image", widget: "image" }
-        - label: "Appointment Section"
-          name: "appointment_section"
-          file: "content/appointment/appointment.md"
-          fields:
-            - { label: "Title", name: "title", widget: "string" }
-            - { label: "Date", name: "date", widget: "datetime" }
-            - { label: "Background Image", name: "background_image", widget: "image" }
-            - { label: "Section Title", name: "section_title", widget: "string" }
-            - { label: "Heading", name: "heading", widget: "string" }
-            - { label: "Why Choose Us Title", name: "why_us_title", widget: "string" }
-            - { label: "Why Choose Us Description", name: "why_us_description", widget: "text" }
-            - label: "Why Choose Us Items"
-              name: "why_us_items"
-              widget: "list"
-              fields:
-                - { label: "Icon", name: "icon", widget: "image" }
-                - { label: "Title", name: "title", widget: "string" }
-                - { label: "Description", name: "description", widget: "text" }
-        - label: "Pricing Section"
-          name: "pricing_section"
-          file: "content/pricing/pricing.md"
-          fields:
-            - { label: "Title", name: "title", widget: "string" }
-            - { label: "Date", name: "date", widget: "datetime" }
-            - { label: "Background Image", name: "background_image", widget: "image" }
-            - { label: "Section Title", name: "section_title", widget: "string" }
-            - label: "Pricing Plans"
-              name: "pricing_plans"
-              widget: "list"
-              fields:
-                - { label: "Tab ID", name: "tab_id", widget: "string" }
-                - { label: "Tab Name", name: "tab_name", widget: "string" }
-                - label: "Plans"
-                  name: "plans"
-                  widget: "list"
-                  fields:
-                    - { label: "Icon", name: "icon", widget: "image" }
-                    - { label: "Price", name: "price", widget: "string" }
-                    - { label: "Title", name: "title", widget: "string" }
-                    - { label: "Description", name: "description", widget: "text" }
-                    - { label: "Button Text", name: "button_text", widget: "string" }
-                    - { label: "Button Class", name: "button_class", widget: "string" }
-                    - { label: "Badge Icon", name: "badge_icon", widget: "image", required: false }
-        - label: "Testimonials"
-          name: "testimonials_section"
-          file: "content/testimonials/testimonials.md"
-          fields:
-            - { label: "Title", name: "title", widget: "string" }
-            - label: "Testimonials"
-              name: "testimonials"
-              widget: "list"
-              fields:
-                - { label: "Image", name: "image", widget: "image" }
-                - { label: "Rating", name: "rating", widget: "number", min: 1, max: 5, step: 1 }
-                - { label: "Text", name: "text", widget: "text" }
-                - { label: "Name", name: "name", widget: "string" }
-                - { label: "Position", name: "position", widget: "string" }
-            - label: "Client Logos"
-              name: "client_logos"
-              widget: "list"
-              fields:
-                - { label: "Client Logo", name: "client_logo", widget: "image" }
-        - label: "Counter Section"
-          name: "counter_section"
-          file: "content/counter/counter.md"
-          fields:
-            - { label: "Title", name: "title", widget: "string" }
-            - label: "Counters"
-              name: "counters"
-              widget: "list"
-              fields:
-                - { label: "Image", name: "image", widget: "image" }
-                - { label: "Count", name: "count", widget: "string" }
-                - { label: "Description", name: "description", widget: "string" }
-            - { label: "Button Text", name: "button_text", widget: "string" }
-            - { label: "Button Link", name: "button_link", widget: "string" }
+    label: "Services"
+    files:
+      - label: "Services Hero Section"
+        name: "hero"
+        file: "content/services/hero.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Hero Title", name: "hero_title", widget: "string" }
+          - { label: "Hero Heading", name: "hero_heading", widget: "string" }
+          - { label: "Hero Subheading", name: "hero_subheading", widget: "string" }
+      - label: "Services Section"
+        name: "services_section"
+        file: "content/services/services.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Date", name: "date", widget: "datetime" }
+          - { label: "Section Title", name: "section_title", widget: "string" }
+          - { label: "Section Heading", name: "section_heading", widget: "string" }
+          - label: "Services"
+            name: "services"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Read More Link", name: "read_more_link", widget: "string" }
+              - { label: "Color", name: "color", widget: "select", options: ["blue", "green", "yellow", "gray"] }
+              - { label: "Icon", name: "icon", widget: "image" }
+              - { label: "Background Image", name: "background_image", widget: "image" }
+      - label: "Appointment Section"
+        name: "appointment_section"
+        file: "content/services/appointment.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Date", name: "date", widget: "datetime" }
+          - { label: "Background Image", name: "background_image", widget: "image" }
+          - { label: "Section Title", name: "section_title", widget: "string" }
+          - { label: "Heading", name: "heading", widget: "string" }
+          - { label: "Why Choose Us Title", name: "why_us_title", widget: "string" }
+          - { label: "Why Choose Us Description", name: "why_us_description", widget: "text" }
+          - label: "Why Choose Us Items"
+            name: "why_us_items"
+            widget: "list"
+            fields:
+              - { label: "Icon", name: "icon", widget: "image" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+      - label: "Pricing Section"
+        name: "pricing_section"
+        file: "content/services/pricing.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Date", name: "date", widget: "datetime" }
+          - { label: "Background Image", name: "background_image", widget: "image" }
+          - { label: "Section Title", name: "section_title", widget: "string" }
+          - label: "Pricing Plans"
+            name: "pricing_plans"
+            widget: "list"
+            fields:
+              - { label: "Tab ID", name: "tab_id", widget: "string" }
+              - { label: "Tab Name", name: "tab_name", widget: "string" }
+              - label: "Plans"
+                name: "plans"
+                widget: "list"
+                fields:
+                  - { label: "Icon", name: "icon", widget: "image" }
+                  - { label: "Price", name: "price", widget: "string" }
+                  - { label: "Title", name: "title", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
+                  - { label: "Button Text", name: "button_text", widget: "string" }
+                  - { label: "Button Class", name: "button_class", widget: "string" }
+                  - { label: "Badge Icon", name: "badge_icon", widget: "image", required: false }
+      - label: "Services Testimonials"
+        name: "testimonials_section"
+        file: "content/services/testimonials.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - label: "Testimonials"
+            name: "testimonials"
+            widget: "list"
+            fields:
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Rating", name: "rating", widget: "number", min: 1, max: 5, step: 1 }
+              - { label: "Text", name: "text", widget: "text" }
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Position", name: "position", widget: "string" }
+          - label: "Client Logos"
+            name: "client_logos"
+            widget: "list"
+            fields:
+              - { label: "Client Logo", name: "client_logo", widget: "image" }
+      - label: "Counter Section"
+        name: "counter_section"
+        file: "content/services/counter.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - label: "Counters"
+            name: "counters"
+            widget: "list"
+            fields:
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Count", name: "count", widget: "string" }
+              - { label: "Description", name: "description", widget: "string" }
+          - { label: "Button Text", name: "button_text", widget: "string" }
+          - { label: "Button Link", name: "button_link", widget: "string" }
+  - name: "doctors"
+    label: "Doctors"
+    files:
+      - label: "Hero Section"
+        name: "hero"
+        file: "content/doctors/hero.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Date", name: "date", widget: "datetime" }
+          - { label: "Section Title", name: "section_title", widget: "string" }
+          - { label: "Subtitle", name: "subtitle", widget: "string" }
+          - { label: "Breadcrumb", name: "breadcrumb", widget: "string" }
 
+      - label: "Our Doctors Section"
+        name: "our_doctors"
+        file: "content/doctors/ourDoctors.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Date", name: "date", widget: "datetime" }
+          - { label: "Section Title", name: "section_title", widget: "string" }
+          - { label: "Subtitle", name: "subtitle", widget: "string" }
+          - label: "Doctors"
+            name: "doctors"
+            widget: "list"
+            fields:
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Specialty", name: "specialty", widget: "string" }
+              - label: "Social Links"
+                name: "social"
+                widget: "list"
+                fields:
+                  - { label: "Icon", name: "icon", widget: "string" }
+                  - { label: "Link", name: "link", widget: "string" }
+
+
+      - label: "Emergency Section"
+        name: "emergency"
+        file: "content/doctors/emergency.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Date", name: "date", widget: "datetime" }
+          - { label: "Background Image", name: "background_image", widget: "image" }
+          - { label: "Section Title", name: "section_title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Contact Blocks", name: "contact_blocks", widget: "list" }
+          - { label: "Icon", name: "icon", widget: "string" }
+          - { label: "Number", name: "number", widget: "string" }
+
+  - name: "blog"
+    label: "Blog"
+    files:
+      - label: "Blog Hero Section"
+        name: "hero"
+        file: "content/blogs/hero.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Subheader Content", name: "subheader_content", widget: "string" }
+          - { label: "Subheader Title", name: "subheader_title", widget: "text" }
+          - { label: "Subheader Breadcrumb", name: "subheader_breadcrumb", widget: "string" }
+          - { label: "Subheader Main Title", name: "subheader_main_title", widget: "string" }
+  - name: "about"
+    label: "About"
+    files:
+      - label: "About Hero Section"
+        name: "hero"
+        file: "content/about/hero.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Subheader Content", name: "subheader_content", widget: "string" }
+          - { label: "Subheader Title", name: "subheader_title", widget: "text" }
+          - { label: "Subheader Breadcrumb", name: "subheader_breadcrumb", widget: "string" }
+          - { label: "Subheader Main Title", name: "subheader_main_title", widget: "string" }
+      - label: "Our Mission Section"
+        name: "ourmission"
+        file: "content/about/ourmission.md"
+        fields:
+          - { label: "Mission Title", name: "mission_title", widget: "string" }
+          - { label: "Mission Description", name: "mission_description", widget: "text" }
+          - { label: "Mission Link", name: "mission_link", widget: "string" }
+          - { label: "Vision Title", name: "vision_title", widget: "string" }
+          - { label: "Vision Description", name: "vision_description", widget: "text" }
+          - { label: "Vision Link", name: "vision_link", widget: "string" }
+          - { label: "Values Title", name: "values_title", widget: "string" }
+          - { label: "Values Description", name: "values_description", widget: "text" }
+          - { label: "Values Link", name: "values_link", widget: "string" }
+      

@@ -1,0 +1,53 @@
+<!--==================== Contact Us ====================-->
+<section class="space">
+    <div class="container container-custom">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="map-img-wrap">
+                    <img src="{{"images/contact-map.png" | relURL}}" class="img-fluid" alt="Contact Map">
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i></li>
+                        <li><i class="fas fa-map-marker-alt"></i></li>
+                        <li><i class="fas fa-map-marker-alt"></i></li>
+                        <li><i class="fas fa-map-marker-alt"></i></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="contact-box">
+                    <p>{{ .Params.description }}</p>
+                    <hr>
+                    <div class="contact-title">
+                        <h4>{{ .Params.contact_info_title }}</h4>
+                        <i class="fas fa-phone-volume"></i>
+                        <div class="contact-title_icon">
+                            <p>{{ .Params.phone_label }}</p>
+                            <h6>{{ .Params.phone_number }}</h6>
+                        </div>
+                    </div>
+                    <div class="contact-title">
+                        <i class="fas fa-envelope"></i>
+                        <div class="contact-title_icon">
+                            <p>{{ .Params.email_label }}</p>
+                            <h6>{{ .Params.email_address }}</h6>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                <div class="contact-box">
+                    <div class="contact-title">
+                        <h4>{{ .Params.head_office_title }}</h4>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="contact-title_icon">
+                            <p>{{ .Params.location_label }}</p>
+                            <h6>{{ .Params.location_line1 }} <br>
+                                {{ .Params.location_line2 }} <br>
+                                {{ .Params.location_line3 }}</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--//End Contact Us -->

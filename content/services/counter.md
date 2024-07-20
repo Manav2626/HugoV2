@@ -10,6 +10,5 @@ counters:
   - image: "images/counter3.png"
     count: "150+"
     description: "Award Winner"
-button_text: "BOOK NOW"
-button_link: "#"
+
 ---

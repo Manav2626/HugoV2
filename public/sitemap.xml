@@ -57,11 +57,15 @@
   </url><url>
     <loc>http://localhost:1313/blogs/</loc>
   </url><url>
+    <loc>http://localhost:1313/contact/</loc>
+  </url><url>
     <loc>http://localhost:1313/about/hero/</loc>
   </url><url>
     <loc>http://localhost:1313/blogs/hero/</loc>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
+  </url><url>
+    <loc>http://localhost:1313/contact/hero/</loc>
   </url><url>
     <loc>http://localhost:1313/services/counter/</loc>
   </url><url>

@@ -114,6 +114,13 @@
       <description></description>
     </item>
     <item>
+      <title>Contact Subheader</title>
+      <link>http://localhost:1313/contact/hero/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/contact/hero/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Counter</title>
       <link>http://localhost:1313/services/counter/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
